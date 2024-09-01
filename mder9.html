@@ -3,37 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Dashboards</title>
+    <title>FEMA Region 9 Dashboards</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 20px;
+            gap: 40px;
         }
         iframe {
             width: 1140px;
             height: 541.25px;
             border: none;
         }
+        .widget-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .dashboard-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .print-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
-    <h1>Embedded Dashboards</h1>
+    <h1>FEMA Region 9 Dashboards (experiment)</h1>
 
-    <iframe title="Declarations & Select Disaster Program Trends Dashboard (v5)" 
-            src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" 
-            allowFullScreen="true"></iframe>
+    <div class="widget-container">
+        <div class="dashboard-title">Declarations & Select Disaster Program Trends Dashboard</div>
+        <iframe id="iframe1" title="Declarations & Select Disaster Program Trends Dashboard" 
+                src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" 
+                allowFullScreen="true"></iframe>
+        <br>
+        <button class="print-button" onclick="printIframe('iframe1')">Print Declarations & Select Disaster Program Trends Dashboard</button>
+    </div>
 
-    <iframe title="Employee Count Dashboard v2" 
-            src="https://app.powerbigov.us/reportEmbed?reportId=6b10ff20-92fa-4123-9515-95601bd3f813&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" 
-            allowFullScreen="true"></iframe>
+    <div class="widget-container">
+        <div class="dashboard-title">Employee Count Dashboard</div>
+        <iframe id="iframe2" title="Employee Count Dashboard" 
+                src="https://app.powerbigov.us/reportEmbed?reportId=6b10ff20-92fa-4123-9515-95601bd3f813&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" 
+                allowFullScreen="true"></iframe>
+        <br>
+        <button class="print-button" onclick="printIframe('iframe2')">Print Employee Count Dashboard</button>
+    </div>
 
-    <iframe title="Preparedness & Homeland Security Grants Dashboard" 
-            src="https://app.powerbigov.us/reportEmbed?reportId=8d9a69e2-8e21-4d07-bcbd-0621af9ad501&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" 
-            allowFullScreen="true"></iframe>
+    <div class="widget-container">
+        <div class="dashboard-title">Preparedness & Homeland Security Grants Dashboard</div>
+        <iframe id="iframe3" title="Preparedness & Homeland Security Grants Dashboard" 
+                src="https://app.powerbigov.us/reportEmbed?reportId=8d9a69e2-8e21-4d07-bcbd-0621af9ad501&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" 
+                allowFullScreen="true"></iframe>
+        <br>
+        <button class="print-button" onclick="printIframe('iframe3')">Print Preparedness & Homeland Security Grants Dashboard</button>
+    </div>
+
+    <script>
+        function printIframe(iframeId) {
+            var iframe = document.getElementById(iframeId);
+            iframe.contentWindow.print();
+        }
+    </script>
 </body>
 </html>
