@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Filter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .iframe-container {
+            margin: 20px 0;
+        }
+        iframe {
+            width: 100%;
+            height: 541px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dashboard Filter by Level</h1>
+    <label for="levelSelect">Select Level:</label>
+    <select id="levelSelect" onchange="filterByLevel()">
+        <option value="all">All Levels</option>
+        <option value="National">National</option>
+<option value="Regional">Regional</option>
+<option value="STT">STT</option>
+<option value="Local">Local</option>
+<option value="Tribal">Tribal</option>
+    </select>
+
+    <div id="iframeContainer">
+        
+<div class="iframe-container" data-level="National">
+    <h3>Declarations & Select Disaster Programs - 2. National Disaster & Program Summary</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Declarations; Incident Types; HMGP; PA; IA; IHP, HA; ONA</p>
+</div>
+
+<div class="iframe-container" data-level="National">
+    <h3>Declarations & Select Disaster Programs - 3. National Program Trends</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Declarations; Incident Types; HMGP; PA; IA; IHP, HA; ONA</p>
+</div>
+
+<div class="iframe-container" data-level="Regional">
+    <h3>Declarations & Select Disaster Programs - 4. Regional Disaster & Program Summary</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Declarations; Incident Types; HMGP; PA; IA; IHP, HA; ONA</p>
+</div>
+
+<div class="iframe-container" data-level="Regional">
+    <h3>Declarations & Select Disaster Programs - 5. Regional Program Trends</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Declarations; Incident Types; HMGP; PA; IA; IHP, HA; ONA</p>
+</div>
+
+<div class="iframe-container" data-level="STT">
+    <h3>Declarations & Select Disaster Programs - 6. State/Territory Disaster & Program Summary Program Trends</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Declarations; Incident Types; HMGP; PA; IA; IHP, HA; ONA</p>
+</div>
+
+<div class="iframe-container" data-level="STT">
+    <h3>Declarations & Select Disaster Programs - 7. State/Territory Program Trends</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Declarations; Incident Types; HMGP; PA; IA; IHP, HA; ONA</p>
+</div>
+
+<div class="iframe-container" data-level="Local">
+    <h3>Declarations & Select Disaster Programs - 8. Local Disaster & Program Summary Program Trends</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Declarations; Incident Types; HMGP; PA; IA; IHP, HA; ONA</p>
+</div>
+
+<div class="iframe-container" data-level="Local">
+    <h3>Declarations & Select Disaster Programs - 9. Local Program Trends</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Declarations; Incident Types; HMGP; PA; IA; IHP, HA; ONA</p>
+</div>
+
+<div class="iframe-container" data-level="Tribal">
+    <h3>Declarations & Select Disaster Programs - 10. Tribal Disaster & Program Summary Program Trends</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Declarations; Incident Types; HMGP; PA; IA; IHP, HA; ONA</p>
+</div>
+
+<div class="iframe-container" data-level="Tribal">
+    <h3>Declarations & Select Disaster Programs - 11. Tribal Program Trends</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Declarations; Incident Types; HMGP; PA; IA; IHP, HA; ONA</p>
+</div>
+
+<div class="iframe-container" data-level="National">
+    <h3>Declarations & Select Disaster Programs - 12. COA Disasters</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Declarations; Incident Types; HMGP; PA; IA; IHP, HA; ONA</p>
+</div>
+
+<div class="iframe-container" data-level="National">
+    <h3>FEMA Public Assistance Program Summary and Trends Dashboard (OpenFEMA data) - 1. PA Obligated by Region & Date Declared & Category Selected</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: PA; PA Categories; Damage Categories; Incident Type</p>
+</div>
+
+<div class="iframe-container" data-level="National">
+    <h3>FEMA Public Assistance Program Summary and Trends Dashboard (OpenFEMA data) - 3. PA Obligated by Region & Date Obligated & Category Selected</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: PA; PA Categories; Damage Categories; Incident Type</p>
+</div>
+
+<div class="iframe-container" data-level="National">
+    <h3>FEMA Public Assistance Program Summary and Trends Dashboard (OpenFEMA data) - 5. PA Obligated by Incident Type, Category, Date Declared Selected</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: PA; PA Categories; Damage Categories; Incident Type</p>
+</div>
+
+<div class="iframe-container" data-level="National">
+    <h3>FEMA Public Assistance Program Summary and Trends Dashboard (OpenFEMA data) - 6. PA Obligated by Incident Type, Category, Date Obligated Selected</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: PA; PA Categories; Damage Categories; Incident Type</p>
+</div>
+
+<div class="iframe-container" data-level="National">
+    <h3>FEMA Public Assistance Program Summary and Trends Dashboard (OpenFEMA data) - 2. PA Obligated by Date Declared & Category Selected</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: PA; PA Categories; Damage Categories; Incident Type</p>
+</div>
+
+<div class="iframe-container" data-level="National">
+    <h3>FEMA Public Assistance Program Summary and Trends Dashboard (OpenFEMA data) - 4. PA Obligated by Date Obligated & Category Selected</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: PA; PA Categories; Damage Categories; Incident Type</p>
+</div>
+
+<div class="iframe-container" data-level="National">
+    <h3>Preparedness & Homeland Security Grants Dashboard - 1. National</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Preparedness Grants; Homeland Security Grants; Non-Disaster Grants</p>
+</div>
+
+<div class="iframe-container" data-level="Regional">
+    <h3>Preparedness & Homeland Security Grants Dashboard - 2. Regional</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Preparedness Grants; Homeland Security Grants; Non-Disaster Grants</p>
+</div>
+
+<div class="iframe-container" data-level="STT">
+    <h3>Preparedness & Homeland Security Grants Dashboard - 3. State & Territory by Program & FY</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Preparedness Grants; Homeland Security Grants; Non-Disaster Grants</p>
+</div>
+
+<div class="iframe-container" data-level="STT">
+    <h3>Preparedness & Homeland Security Grants Dashboard - 4. State & Territory by Vendor & Program</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Preparedness Grants; Homeland Security Grants; Non-Disaster Grants</p>
+</div>
+
+<div class="iframe-container" data-level="National">
+    <h3>Preparedness & Homeland Security Grants Dashboard - 5. Topline Awards Summary Selected</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Preparedness Grants; Homeland Security Grants; Non-Disaster Grants</p>
+</div>
+
+<div class="iframe-container" data-level="National">
+    <h3>BRIC & FMA National Comparative Dashboard - 1. National Summary</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: BRIC; FMA; HMA</p>
+</div>
+
+<div class="iframe-container" data-level="Regional">
+    <h3>BRIC & FMA National Comparative Dashboard - 2. Regional Summary</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: BRIC; FMA; HMA</p>
+</div>
+
+<div class="iframe-container" data-level="National">
+    <h3>FEMA Hazard Mitigation Plan Dashboard v1 (direct import mode) - 1. Hazard Mitigation Plans National Summary Selected</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Hazard Mitigation Plans</p>
+</div>
+
+<div class="iframe-container" data-level="Regional">
+    <h3>FEMA Hazard Mitigation Plan Dashboard v1 (direct import mode) - 2. Hazard Mitigation Plans Regional Summary Selected</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Hazard Mitigation Plans</p>
+</div>
+
+<div class="iframe-container" data-level="Tribal">
+    <h3>FEMA Hazard Mitigation Plan Dashboard v1 (direct import mode) - 2. Hazard Mitigation Plans Tribal Summary Selected</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Hazard Mitigation Plans</p>
+</div>
+
+<div class="iframe-container" data-level="National">
+    <h3>Mission Assignments Trends Dashboard - 1. Mission Assignments Summary</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Mission Assignments; MAs; Prescripted Mission Assignments; PSMAs</p>
+</div>
+
+<div class="iframe-container" data-level="National">
+    <h3>Employee Count Dashboard v2 - 1. HQ & Regions by Employee Type</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Employee Count; Staffing; Employee Type; Org Level; Organizational Alignment; Organizational Structure; Positions; Workforce</p>
+</div>
+
+<div class="iframe-container" data-level="National">
+    <h3>Employee Count Dashboard v2 - 6. Org Level 1 by Org Level 2</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Employee Count; Staffing; Employee Type; Org Level; Organizational Alignment; Organizational Structure; Positions; Workforce</p>
+</div>
+
+<div class="iframe-container" data-level="National">
+    <h3>Employee Count Dashboard v2 - 7. Org Level 2 by Org Level 3</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Employee Count; Staffing; Employee Type; Org Level; Organizational Alignment; Organizational Structure; Positions; Workforce</p>
+</div>
+
+<div class="iframe-container" data-level="National">
+    <h3>Employee Count Dashboard v2 - 8. Org Level 3 by Org Level 4</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Employee Count; Staffing; Employee Type; Org Level; Organizational Alignment; Organizational Structure; Positions; Workforce</p>
+</div>
+
+<div class="iframe-container" data-level="National">
+    <h3>FEMA Policy & Doctrine Library - 1. FEMA Policy & Doctrine & MOU Document Library</h3>
+    <iframe src="https://app.powerbigov.us/reportEmbed?reportId=cf4fa579-0640-4675-97d5-4bc09fbd7e44&autoAuth=true&ctid=2863bcaf-4433-4a95-89dd-302e4b0159a1" width="1140" height="541.25" frameborder="0" allowfullscreen="true"></iframe>
+    <p>Programs: Policy; Policies; Doctrine; MOU; MOUs; MOA; MOAs;  Keystone; Keystones; Directive; Directives; Guidance; Guide; Guides; Manual; Manuals; Capstone; Capstones; Instruction; Instructions</p>
+</div>
+
+    </div>
+
+    <script>
+        function filterByLevel() {
+            var selectedLevel = document.getElementById("levelSelect").value;
+            var iframes = document.getElementsByClassName("iframe-container");
+
+            for (var i = 0; i < iframes.length; i++) {
+                if (selectedLevel === "all" || iframes[i].getAttribute("data-level") === selectedLevel) {
+                    iframes[i].style.display = "block";
+                } else {
+                    iframes[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
